@@ -1,7 +1,7 @@
 ---
 description: Separa las solicitudes que debe revisar una persona y crea casos_para_humano.xlsx
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
+model: google/gemini-3.1-flash-lite
 ---
 Carga la skill reglas-prestamo y ejecuta exactamente:
 `python .opencode/skills/reglas-prestamo/scripts/clasificar.py ejercicio1/solicitudes.xlsx --salida ejercicio1/casos_para_humano.xlsx`

@@ -1,7 +1,7 @@
 ---
 description: Redacta informe.docx para la jefatura a partir de los archivos del analista y del detector
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
+model: google/gemini-3.1-flash-lite
 ---
 Carga la skill word y la skill excel.
 Lee con `leer.py` los archivos ejercicio1/resumen.xlsx y ejercicio1/casos_para_humano.xlsx.

@@ -1,7 +1,7 @@
 ---
 description: Comprueba que las cifras de informe.docx coincidan con los archivos de Excel
 mode: all
-model: opencode/deepseek-v4.1-flash-free
+model: google/gemini-3.1-flash-lite
 permissions:
   - action: edit
     resource: "*"

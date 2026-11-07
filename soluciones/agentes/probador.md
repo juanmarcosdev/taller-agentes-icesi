@@ -1,7 +1,7 @@
 ---
 description: Revisa la pagina contra la lista de chequeo de los requisitos
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
+model: google/gemini-3.1-flash-lite
 permissions:
   - action: edit
     resource: "*"

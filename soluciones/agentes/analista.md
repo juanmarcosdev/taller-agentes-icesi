@@ -1,7 +1,7 @@
 ---
 description: Calcula los totales de solicitudes por sede y crea resumen.xlsx
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
+model: google/gemini-3.1-flash-lite
 ---
 Carga la skill excel y ejecuta exactamente:
 `python .opencode/skills/excel/scripts/resumir.py ejercicio1/solicitudes.xlsx --agrupar Sede --sumar Monto --salida ejercicio1/resumen.xlsx`

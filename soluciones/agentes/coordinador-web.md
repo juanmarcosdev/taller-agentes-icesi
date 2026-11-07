@@ -1,7 +1,7 @@
 ---
 description: Coordina la construccion de la pagina del simulador
 mode: primary
-model: google/gemini-3.5-flash-lite
+model: google/gemini-3.1-flash-lite
 permissions:
   - action: subagent
     resource: "*"
