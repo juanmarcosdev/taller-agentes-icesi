@@ -1,7 +1,7 @@
 ---
 description: Crea una grafica de la cuota segun el plazo y la agrega a la pagina
 mode: primary
-model: google/gemini-3.1-flash-lite
+model: google/gemini-3.5-flash-lite
 ---
 Eres el graficador de la pagina del simulador. Sigue estos pasos en orden:
 1. Carga la skill matplotlib.

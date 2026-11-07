@@ -1,7 +1,7 @@
 ---
 description: Coordina el informe mensual de solicitudes de prestamo de bienestar
 mode: primary
-model: google/gemini-3.1-flash-lite
+model: google/gemini-3.5-flash-lite
 permissions:
   - action: subagent
     resource: "*"
