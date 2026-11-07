@@ -1,0 +1,13 @@
+{
+  "name": "Taller de agentes",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": { "ghcr.io/devcontainers/features/node:1": { "version": "22" } },
+  "postCreateCommand": "pip install --quiet openpyxl==3.1.5 python-docx==1.1.2 matplotlib==3.11.2 && npm install -g @opencode/cli@2.2.6",
+  "postStartCommand": "nohup bash .devcontainer/iniciar-opencode.sh >/tmp/opencode.log 2>&1 &",
+  "containerEnv": { "OPENCODE_SERVER_PASSWORD": "taller" },
+  "forwardPorts": [4096, 8000],
+  "portsAttributes": {
+    "4096": { "label": "OpenCode", "onAutoForward": "notify" },
+    "8000": { "label": "Pagina web del ejercicio 2", "onAutoForward": "notify" }
+  }
+}

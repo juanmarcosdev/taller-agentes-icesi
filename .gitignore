@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+ejercicio1/resumen.xlsx
+ejercicio1/casos_para_humano.xlsx
+ejercicio1/informe.docx
+ejercicio1/verificacion.md
+ejercicio2/index.html
+ejercicio2/estilos.css
+ejercicio2/contrato.md
+ejercicio2/revision.md
+ejercicio2/grafica.py
+ejercicio2/grafica.png
+.agents/
+.venv/

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4.1-flash-free",
+  "small_model": "opencode/deepseek-v4.1-flash-free",
+  "providers": {
+    "google": {
+      "settings": {
+        "headerTimeout": 60000,
+        "chunkTimeout": 60000
+      }
+    }
+  },
+  "permissions": [
+    { "action": "*", "resource": "*", "effect": "deny" },
+    { "action": "read", "resource": "*", "effect": "allow" },
+    { "action": "glob", "resource": "*", "effect": "allow" },
+    { "action": "grep", "resource": "*", "effect": "allow" },
+    { "action": "skill", "resource": "*", "effect": "allow" },
+    { "action": "edit", "resource": "ejercicio1/*", "effect": "allow" },
+    { "action": "edit", "resource": "ejercicio2/*", "effect": "allow" },
+    { "action": "edit", "resource": "ejercicio1/solicitudes.xlsx", "effect": "deny" },
+    { "action": "edit", "resource": "ejercicio2/requisitos.md", "effect": "deny" },
+    { "action": "shell", "resource": "python .opencode/skills/excel/scripts/leer.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/excel/scripts/resumir.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/excel/scripts/guardar.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/reglas-prestamo/scripts/clasificar.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/word/scripts/leer.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/word/scripts/comparar.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/cuota/scripts/cuota.py *", "effect": "allow" },
+    { "action": "shell", "resource": "python .opencode/skills/word/scripts/crear.py *", "effect": "ask" },
+    { "action": "shell", "resource": "python ejercicio2/grafica.py", "effect": "ask" }
+  ]
+}
